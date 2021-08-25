@@ -1,4 +1,7 @@
-import express from "express";
+import express from "express"
+import {getFoodsByType} from "./handlers/GetFoodsByType"
+import {foods} from "./data/foods";
+
 
 const app = express();
 const port = 8080; // default port to listen
@@ -7,6 +10,15 @@ const port = 8080; // default port to listen
 app.get( "/", ( req, res ) => {
     res.send( "Hello world!" );
 } );
+
+app.get( "/foods", ( req, res ) => {
+    res.json(foods);
+} );
+
+app.get( "/foods/:foodtype", ( req, res ) => {
+    res.json(getFoodsByType(foods, req.params.foodtype));
+} );
+
 
 // start the Express server
 app.listen( port, () => {
