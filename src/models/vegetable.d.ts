@@ -1,8 +1,10 @@
-import {Months} from "./months"
+import {Month} from "./month"
 
 export type Vegetable = {
     name : string,
-    months: Months[],
+    months: Month[],
     daysFresh: number,
-    storage: 'Fridge' | 'Cupboard' | 'Counter' | 'Freezer'
-}
+    storage: 'Fridge' | 'Cupboard' | 'Counter' | 'Freezer',
+    imageUrl?: string
+    notes? :string
+};
