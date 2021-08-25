@@ -208,7 +208,7 @@ export const vegetables : Vegetable[] = [
         name: "Marrow",
         months: ["July", "August", "September", "October"],
         daysFresh: 60,
-        storage: Cupboard,
+        storage: "Cupboard",
         imageUrl: "https://www.rhs.org.uk/getmedia/2366df46-0711-46ab-9430-d57d147a134d/A-collection-of-Cucurbita-pepo-(marrow)_PUB0020904.jpg"
     },
     {
