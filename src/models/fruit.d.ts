@@ -3,8 +3,8 @@ import {Month} from "./month"
 export type Fruit = {
     name : string,
     months: Month[],
-    daysFresh: number,
-    storage: 'Fridge' | 'Cupboard' | 'Counter' | 'Freezer',
+    daysFresh: number | "to add",
+    storage: 'Fridge' | 'Cupboard' | 'Counter' | 'Freezer' | "to add",
     imageUrl?: string
     notes? :string
 };
