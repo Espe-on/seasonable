@@ -1,8 +1,216 @@
-import {Vegetable} from "../models/vegetable";
-
-export const vegetables : Vegetable[] = [
+import {Food} from "../models/food"
+export const foods: Food[] = [
+    {
+        name: "Apples",
+        type:"Fruit",
+        months: ["August", "September", "October", "November"],
+        daysFresh: 14,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/132cd6a0-ebf0-4168-8e94-90c16647e399/Apples-in-the-Gardens-Through-Time-at-RHS-Garden-Harlow-Carr,-Yorkshire-_MAR0005361.jpg"
+    },
+    {
+        name: "Apricots",
+        type:"Fruit",
+        months: ["July", "August"],
+        daysFresh: 5,
+        storage: "Counter",
+        imageUrl: "https://www.rhs.org.uk/getmedia/702ba8a0-0ee6-4a52-963a-cdac56095613/Fan-trained-apricot-940x627.jpg"
+    },
+    {
+        name: "Blackberries",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 100,
+        storage: "Freezer",
+        imageUrl: "https://www.rhs.org.uk/getmedia/0eb33c8e-e099-432a-93a6-7086a8c3dbed/Blackberry-Loch-Ness.jpg"
+    },
+    {
+        name: "Blackcurrants",
+        type:"Fruit",
+        months: ["June", "July", "August"],
+        daysFresh: 100,
+        storage: "Freezer",
+        imageUrl: "https://www.rhs.org.uk/getmedia/4e98ed72-361d-4426-9194-67a6d4752a64/Ribes-nigrum-Ben-Alder-_WSYD0015493.jpg?width=940&height=627&ext=.jpg"
+    },
+    {
+        name: "Blueberries",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/174e9e5c-f10d-4bab-bda1-fa32db661663/Blueberries_PUB0010288.jpg"
+    },
+    {
+        name: "Cherries",
+        type:"Fruit",
+        months: ["June", "July", "August"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/b2a51c9c-6105-4159-bebe-7c57d3ceb713/Prunus-avium_PUB0000579.jpg"
+    },
+    {
+        name: "Lemons",
+        type:"Fruit",
+        months: ["January", "February", "March", "April", "July", "August", "September", "October", "November", "December"],
+        daysFresh: 7,
+        storage: "Counter",
+        imageUrl: "https://www.rhs.org.uk/getmedia/6e856417-7743-479d-be91-b71d67aa1ab5/LemonsInTree940x627.jpg"
+    },
+    {
+        name: "Limes",
+        type:"Fruit",
+        months: ["January", "February", "March", "April", "July", "August", "September", "October", "November", "December"],
+        daysFresh: 7,
+        storage: "Counter",
+        imageUrl: "https://img.crocdn.co.uk/images/products2/pl/20/00/04/08/pl2000040846.jpg"
+    },
+    {
+        name: "Damsons",
+        type:"Fruit",
+        months: ["August", "September"],
+        daysFresh: 100,
+        storage: "Freezer",
+        imageUrl: "https://www.rhs.org.uk/getmedia/2a6794f9-8964-4d96-a861-bf030cedd178/Damsons-WSY0035858-Hero-1088x726.jpg"
+    },
+    {
+        name: "Figs",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 3,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/ca5114ac-1486-40a6-8744-88923370d9f5/Fig_PUB0010564.jpg"
+    },
+    {
+        name: "Gages",
+        type:"Fruit",
+        months: ["August", "September"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/3ec63c1a-08de-4875-bab1-1aa8a03777f0/Prunus-domestica-Kirke-s-_PUB0012767.jpg"
+    },
+    {
+        name: "Gooseberries",
+        type:"Fruit",
+        months: ["June", "July", "August"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/ad8cbab0-76d9-46ad-8d35-53bb1a1a76eb/Ribes-uva-crispa-Invicta-_WSY0034581.jpg"
+    },
+    {
+        name: "Grapes",
+        type:"Fruit",
+        months: ["August", "September", "October", "November"],
+        daysFresh: 5,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/42ce5519-1aa6-432d-86d2-45c18bc078f1/Vitis-Boskoop-Glory-_WSYD0012332.jpg"
+    },
+    {
+        name: "Kiwi",
+        type:"Fruit",
+        months: ["August", "September"],
+        daysFresh: 5,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/97611542-7587-44c3-a155-a0e69d5e2e14/kiwifruit-940x627.jpg"
+    },
+    {
+        name: "Medlars",
+        type:"Fruit",
+        months: ["October", "November", "December"],
+        daysFresh: 10,
+        storage: "Cupboard",
+        imageUrl: "https://www.rhs.org.uk/getmedia/22309329-e392-448c-aacf-8439e6291172/Mespilus-germanica-Iranian-Medlar-_PUB0000703.jpg"
+    },
+    {
+        name: "Melons",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/847feb25-c573-48ce-96c4-3071822a86a1/Melon-Sweetheart-_PUB0003678.jpg"
+    },
+    {
+        name: "Mulberries",
+        type:"Fruit",
+        months: ["August", "September", "October"],
+        daysFresh: 3,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/3b42dc86-160e-446c-b500-c01310d7d81a/Mulberries-940x627.jpg"
+    },
+    {
+        name: "Nectarines",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 3,
+        storage: "Counter",
+        imageUrl: "https://www.rhs.org.uk/getmedia/666a9fe9-5294-4691-b838-219572adf15d/Nectarine-Prunus-persica-var-nectarina-Lord-Napier-WSY0042426-600x400.jpg"
+    },
+    {
+        name: "Peaches",
+        type:"Fruit",
+        months: ["July", "August", "September"],
+        daysFresh: 3,
+        storage: "Counter",
+        imageUrl: "https://www.rhs.org.uk/getmedia/bf43541e-dcf0-4d0a-93f4-23266e9f4653/peach_WSYD0014099.jpg?width=940&height=627&ext=.jpg"
+    },
+    {
+        name: "Pears",
+        type:"Fruit",
+        months: ["August", "September", "October", "November", "December"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/59e10450-8a31-4c02-a065-0176948ecff6/Pyrus-communis-(pears)_PUB0013436.jpg"
+    },
+    {
+        name: "Plums",
+        type:"Fruit",
+        months: ["August", "September"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/3ec63c1a-08de-4875-bab1-1aa8a03777f0/Prunus-domestica-Kirke-s-_PUB0012767.jpg"
+    },
+    {
+        name: "Quinces",
+        type:"Fruit",
+        months: ["September", "October", "November"],
+        daysFresh: 7,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/9a7fb1bf-6c7c-40d0-ad7e-e44359d5dbc7/Cydonia-oblonga-Meech-s-Prolific-_WSYD0016532.jpg"
+    },
+    {
+        name: "Raspberries",
+        type:"Fruit",
+        months: ["June", "July", "August", "September", "October"],
+        daysFresh: 5,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/1fc1d77c-31e0-42a2-844e-a151f3355620/Rubus-idaeus-Autumn-Bliss-_WSYD0005788.jpg"
+    },
+    {
+        name: "Redcurrants",
+        type:"Fruit",
+        months: ["June", "July", "August"],
+        daysFresh: 100,
+        storage: "Freezer",
+        imageUrl: "https://www.rhs.org.uk/getmedia/3c3368e9-aa99-4359-94f1-f89f35acefa1/Redcurrant-Jonkheer-van-Tets-_RHS-0001603.jpg"
+    },
+    {
+        name: "Strawberries",
+        type:"Fruit",
+        months: ["June", "July", "August", "September"],
+        daysFresh: 5,
+        storage: "Fridge",
+        imageUrl: "https://www.rhs.org.uk/getmedia/e7f4daba-c76d-43de-b040-f9d2654974b6/RHS-Hampton-Court-Palace-Flower-Show-2010_PUB0008924.jpgg"
+    },
+    {
+        name: "Whitecurrants",
+        type:"Fruit",
+        months: ["June", "July", "August"],
+        daysFresh: 100,
+        storage: "Freezer",
+        imageUrl: "https://www.rhs.org.uk/getmedia/4e98ed72-361d-4426-9194-67a6d4752a64/Ribes-nigrum-Ben-Alder-_WSYD0015493.jpg?width=940&height=627&ext=.jpg"
+    },
     {
         name: "Asparagus",
+        type:"Vegetable",
         months: ["April", "May", "June"],
         daysFresh: 4,
         storage: "Fridge",
@@ -10,6 +218,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Aubergines",
+        type:"Vegetable",
         months: ["August", "September"],
         daysFresh: 6,
         storage: "Fridge",
@@ -17,6 +226,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Beetroot",
+        type:"Vegetable",
         months: ["June", "July", "August", "September", "October"],
         daysFresh: 4,
         storage: "Cupboard",
@@ -24,6 +234,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Broad beans",
+        type:"Vegetable",
         months: ["May", "June", "July"],
         daysFresh: 5,
         storage: "Fridge",
@@ -31,6 +242,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Broccoli",
+        type:"Vegetable",
         months: ["February", "March", "April", "August", "September", "October"],
         daysFresh: 5,
         storage: "Fridge",
@@ -38,6 +250,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Brussels sprouts",
+        type:"Vegetable",
         months: ["January", "February", "March", "August", "September", "October", "November", "December"],
         daysFresh: 5,
         storage: "Fridge",
@@ -45,6 +258,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Cabbage",
+        type:"Vegetable",
         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 20,
         storage: "Fridge",
@@ -52,6 +266,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Calabrese",
+        type:"Vegetable",
         months: ["August", "September", "October"],
         daysFresh: 5,
         storage: "Fridge",
@@ -59,6 +274,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Carrots",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", "September", "October"],
         daysFresh: 25,
         storage: "Fridge",
@@ -66,6 +282,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Cauliflower",
+        type:"Vegetable",
         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 7,
         storage: "Fridge",
@@ -73,6 +290,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Celeriac",
+        type:"Vegetable",
         months: ["January", "February", "March", "October", "November", "December"],
         daysFresh: 14,
         storage: "Fridge",
@@ -80,6 +298,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Celery",
+        type:"Vegetable",
         months: ["August", "September", "October", "November", "December"],
         daysFresh: 14,
         storage: "Fridge",
@@ -87,6 +306,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Chard",
+        type:"Vegetable",
         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 10,
         storage: "Fridge",
@@ -94,6 +314,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Chicory",
+        type:"Vegetable",
         months: ["January", "February", "July", "August", "September", "October", "November", "December"],
         daysFresh: 5,
         storage: "Fridge",
@@ -101,6 +322,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Chilli peppers",
+        type:"Vegetable",
         months: ["July", "August", "September", "October",],
         daysFresh: 7,
         storage: "Fridge",
@@ -108,6 +330,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Chinese broccoli",
+        type:"Vegetable",
         months: ["July", "August", "September", "October", "November"],
         daysFresh: "to add",
         storage: "to add",
@@ -115,6 +338,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Chinese cabbage",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", "September", "October", "November",],
         daysFresh: 5,
         storage: "Fridge",
@@ -122,6 +346,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Courgettes",
+        type:"Vegetable",
         months: ["June", "July", "August", "September", "October"],
         daysFresh: 5,
         storage: "Fridge",
@@ -129,6 +354,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Cucumbers",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 7,
         storage: "Fridge",
@@ -136,6 +362,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Endive",
+        type:"Vegetable",
         months: ["March", "April", "May", "June", "July", "August", "September", "October", "November"],
         daysFresh: 5,
         storage: "Fridge",
@@ -143,6 +370,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Fennel",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 10,
         storage: "Fridge",
@@ -150,6 +378,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "French beans",
+        type:"Vegetable",
         months: ["July", "August", "September"],
         daysFresh: 7,
         storage: "Fridge",
@@ -157,6 +386,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Garlic",
+        type:"Vegetable",
         months: ["June", "July", "August",],
         daysFresh: 14,
         storage: "Cupboard",
@@ -164,6 +394,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Globe artichokes",
+        type:"Vegetable",
         months: ["June", "July", "August", "September"],
         daysFresh: 3,
         storage: "Fridge",
@@ -171,6 +402,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Jerusalem artichokes",
+        type:"Vegetable",
         months: ["January", "November", "December"],
         daysFresh: 14,
         storage: "Cupboard",
@@ -178,6 +410,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Kale",
+        type:"Vegetable",
         months: ["January", "February", "September", "October", "November", "December"],
         daysFresh: 7,
         storage: "Fridge",
@@ -185,6 +418,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Kohlrabi",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", "September", "October", "November"],
         daysFresh: 7,
         storage: "Fridge",
@@ -192,6 +426,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Leeks",
+        type:"Vegetable",
         months: ["January", "February", "August", "September", "October", "November", "December"],
         daysFresh: 14,
         storage: "Fridge",
@@ -199,6 +434,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Lettuce",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", "September", "October", "November",],
         daysFresh: 14,
         storage: "Fridge",
@@ -206,6 +442,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Marrow",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 60,
         storage: "Cupboard",
@@ -213,6 +450,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Mizuna",
+        type:"Vegetable",
         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 7,
         storage: "Fridge",
@@ -220,6 +458,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Okra",
+        type:"Vegetable",
         months: ["July", "August", "September", "October", "November", "December"],
         daysFresh: 3,
         storage: "Fridge",
@@ -227,6 +466,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Onions",
+        type:"Vegetable",
         months: ["July", "August", "September"],
         daysFresh: 60,
         storage: "Cupboard",
@@ -234,6 +474,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Pak choi",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", ],
         daysFresh: 7,
         storage: "Fridge",
@@ -241,6 +482,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Parsnips",
+        type:"Vegetable",
         months: ["January", "February", "September", "October", "November", "December"],
         daysFresh: 21,
         storage: "Fridge",
@@ -248,6 +490,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Peas",
+        type:"Vegetable",
         months: ["June", "July", "August", "September", "October"],
         daysFresh: 60,
         storage: "Freezer",
@@ -255,6 +498,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Peppers",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 10,
         storage: "Fridge",
@@ -262,6 +506,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Potatoes",
+        type:"Vegetable",
         months: ["June", "July", "August", "September", "October"],
         daysFresh: 28,
         storage: "Cupboard",
@@ -269,6 +514,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Pumpkins",
+        type:"Vegetable",
         months: ["September", "October"],
         daysFresh: 60,
         storage: "Cupboard",
@@ -276,6 +522,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Radishes",
+        type:"Vegetable",
         months: ["January", "February", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 14,
         storage: "Fridge",
@@ -283,6 +530,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Rocket",
+        type:"Vegetable",
         months: ["June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 5,
         storage: "Fridge",
@@ -290,6 +538,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Runner beans",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 14,
         storage: "Fridge",
@@ -297,6 +546,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Salad leaves",
+        type:"Vegetable",
         months: ["May", "June", "July", "August", "September", "October", "November"],
         daysFresh: 5,
         storage: "Fridge",
@@ -304,6 +554,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Spring onions",
+        type:"Vegetable",
         months: ["March", "April", "May", "June", "July", "August", "September", "October"],
         daysFresh: 7,
         storage: "Fridge",
@@ -311,6 +562,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Salsify",
+        type:"Vegetable",
         months: ["March", "April", "September", "October", "November", "December"],
         daysFresh: 7,
         storage: "Fridge",
@@ -318,6 +570,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Shallots",
+        type:"Vegetable",
         months: [ "July", "August",],
         daysFresh: 28,
         storage: "Cupboard",
@@ -325,6 +578,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Soy beans",
+        type:"Vegetable",
         months: ["August", "September", "October"],
         daysFresh: 60,
         storage: "Cupboard" ,
@@ -332,6 +586,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Spinach",
+        type:"Vegetable",
         months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 3,
         storage: "Fridge",
@@ -339,6 +594,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Squash",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 14,
         storage: "Cupboard",
@@ -346,6 +602,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Swede",
+        type:"Vegetable",
         months: ["September", "October", "November", "December"],
         daysFresh: 14,
         storage: "Cupboard",
@@ -353,6 +610,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Sweet potatoes",
+        type:"Vegetable",
         months: ["August", "September", "October"],
         daysFresh: 14,
         storage: "Cupboard",
@@ -360,6 +618,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Sweetcorn",
+        type:"Vegetable",
         months: ["July", "August", "September", "October"],
         daysFresh: 7,
         storage: "Fridge",
@@ -367,6 +626,7 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Tomatoes",
+        type:"Vegetable",
         months: ["July", "August", "September"],
         daysFresh: 14,
         storage: "Cupboard",
@@ -374,11 +634,10 @@ export const vegetables : Vegetable[] = [
     },
     {
         name: "Turnip",
+        type:"Vegetable",
         months: ["March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         daysFresh: 14,
         storage: "Cupboard",
         imageUrl: "https://www.rhs.org.uk/getmedia/9bf0ae1e-f532-4cab-87c8-19c6eadaa3ff/Turnips_PUB0019241.jpg"
     },
 ]
-
-
